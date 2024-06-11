@@ -4,10 +4,10 @@ export default function Home() {
   return (
     <>
       <ul>
-        {products.map((item,index) =>
+        {products.map((item, index) =>
           <li key={index}>
-            {item.Brand}
-        </li>
+            {item.brand}
+          </li>
         )}
       </ul>
     </>
