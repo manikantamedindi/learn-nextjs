@@ -1,4 +1,5 @@
 import { products } from "./utils/products";
+import Counter from "./components/counter";
 
 export default function Home() {
   return (
@@ -10,6 +11,8 @@ export default function Home() {
           </li>
         )}
       </ul>
+      <hr />
+      <Counter />
     </>
   )
 }
