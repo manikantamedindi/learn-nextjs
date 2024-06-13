@@ -6,7 +6,7 @@ export default function Home() {
       <ul>
         {products.map((item, index) =>
           <li key={index}>
-              {item.brand}
+            {item.brand}
           </li>
         )}
       </ul>
