@@ -1,5 +1,5 @@
-export default async function Products() {
-  const response = await fetct("https://dummyjson.com/products")
-  let data = await response.json();
-  console.log(data)
+export default async function getAllProducts() {
+  let response = await fetch("https://dummyjson.com/products")
+  response = await response.json()
+  return response.products
 }
