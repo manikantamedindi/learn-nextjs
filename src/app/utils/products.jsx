@@ -1,22 +1,5 @@
-export const products = [
-  {
-    id: 1,
-    name: "iPhone",
-    brand: "Apple"
-  },
-  {
-    id: 2,
-    name: "Galaxy S21",
-    brand: "Samsung"
-  },
-  {
-    id: 3,
-    name: "Pixel 6",
-    brand: "Google"
-  },
-  {
-    id: 4,
-    name: "OnePlus 9",
-    brand: "OnePlus"
-  }
-];
+export default async function Products() {
+  const response = await fetct("https://dummyjson.com/products")
+  let data = await response.json();
+  console.log(data)
+}
